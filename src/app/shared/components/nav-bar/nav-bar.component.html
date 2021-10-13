@@ -1,0 +1,79 @@
+<header>
+    <nav class="navbar navbar-light bg-light fixed-top" id="nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" routerLink="/home">
+          <img
+            class="img--nav"
+            src="../../../assets/icons/logoAndinaMotors.png "
+            alt="logo cars"
+        /></a>
+        <button
+          class="navbar-toggler me-5"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Andina Motors
+            </h5>
+            <button
+              type="button"
+              class="btn-close text-reset me-5"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" routerLink="/home"
+                  >Home<img
+                    src="../../../assets/icons/home_black_24dp.svg"
+                    alt="icon home"
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/nuevos"
+                  >Estrena<img
+                    src="../../../assets/icons/car_rental_black_24dp.svg"
+                    alt="icon nuevos"
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/clientes"
+                  >Clientes<img
+                    src="../../../assets/icons/person_add_black_24dp.svg"
+                    alt="icon clientes"
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/reparacion"
+                  >Mantenimiento y Reparación<img
+                    src="../../../assets/icons/car_repair_black_24dp.svg"
+                    alt="icon reparacion"
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/citas"
+                  >Consultar Citas<img
+                    src="../../../assets/icons/electric_car_black_24dp.svg "
+                    alt="icon entragar"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
