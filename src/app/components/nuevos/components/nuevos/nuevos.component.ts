@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { AutosService } from '../../../../core/services/autos/autos.service';
+
+
 
 @Component({
   selector: 'app-nuevos',
@@ -7,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NuevosComponent implements OnInit {
 
-  constructor() { }
+  idVehiculo: any;
+  verAuto: any;
+  constructor(private autosService: AutosService) {}
 
   ngOnInit(): void {
   }
-
+  traerAuto() {
+    this.verAuto = this.autosService.buscarAuto(this.idVehiculo);
+    console.log(this.verAuto);
+    return this.verAuto;
+  }
 }
