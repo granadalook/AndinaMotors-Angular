@@ -4,15 +4,8 @@ import { CitasComponent } from './components/citas/citas.component';
 
 import { citasRoutingModule } from './citas-routing.module';
 
-
-
 @NgModule({
-  declarations: [
-    CitasComponent
-  ],
-  imports: [
-  citasRoutingModule,
-   
-  ]
+  declarations: [CitasComponent],
+  imports: [citasRoutingModule],
 })
-export class CitasModule { }
+export class CitasModule {}
