@@ -3,7 +3,6 @@
   Las mejores marcas del mundo solo las encuentras en Andina Motors
 </h1>
 <hr />
-
 <div
   id="carouselExampleCaptions"
   class="carousel slide"
@@ -107,10 +106,10 @@
   <div class="boton--nuevos">
   <div class="input-group mb-3 tanio">
     <input
-      type="number"
+      type="text"
       [(ngModel)]="idVehiculo"
       class="form-control"
-      placeholder="ID"
+      placeholder="Marca"
       aria-label="Recipient's username"
       aria-describedby="button-addon2"
     />
@@ -126,35 +125,33 @@
   </div>
 </div><button (click)="verAutos()" type="button" class="btn btn-dark fs-3 btn btn-outline-warning"> Todas las Marcas</button>
 </section>
-
 <hr>
 <section class="card-principal">
-<ng-container *ngIf="verAuto">
-  <div class="card text-white bg-dark mb-3 border-warning mb-3 " style="width: 18rem;">
-  <img src="{{verAuto.logo}}" class="card-img-top" alt="logo marca">
-  <div class="card-body">
-    <h5 class="card-title text-center"> {{verAuto.marca |uppercase}}</h5>
-    <p class="card-text">{{verAuto.peso }}</p>
-    <p class="card-text">{{ verAuto.potencia }}</p>
-    <a href="{{ verAuto.url }}" target="_blank" class="btn btn-dark btn btn-outline-warning">Saber mas</a>
-  </div>
-</div>
-  
-  
-</ng-container>
-</section>
-
-<section class="cardAutos">
-<ng-container *ngFor="let Auto of vehiculos">
-  <div class="card text-white bg-dark mb-3 border-warning mb-3 " style="width: 18rem;">
-    <img src="{{Auto.logo}}" class="card-img-top" alt="logo marca">
-    <div class="card-body">
-      <h5 class="card-title text-center"> {{ Auto.marca |uppercase}}</h5>
-      <p class="card-text">{{ Auto.peso }}</p>
-      <p class="card-text">{{ Auto.potencia }}</p>
-      <a href="{{ Auto.url }}" target="_blank" class="btn btn-dark btn btn-outline-warning">Saber mas</a>
+  <ng-container *ngIf="verAuto">
+    <div class="card text-white bg-dark mb-3 border-warning mb-3 " style="width: 18rem;">
+      <img src="{{verAuto.logo}}" class="card-img-top" alt="logo marca">
+        <div class="card-body">
+          <h5 class="card-title text-center"> {{verAuto.marca |uppercase}}</h5>
+          <p class="card-text">Fundador: <br>{{ verAuto.fundador }}</p>
+          <p class="card-text">Año fundacion: <br> {{ verAuto.fundacion }}</p>
+          <p class="card-text">Sede: <br> {{ verAuto.sede }}</p>
+          <a href="{{ verAuto.url }}" target="_blank" class="btn btn-dark btn btn-outline-warning">Saber mas</a>
+        </div>
     </div>
-  </div>
-</ng-container>
+  </ng-container>
+</section>
+<section class="cardAutos">
+  <ng-container *ngFor="let Auto of vehiculos">
+    <div class="card text-white bg-dark mb-3 border-warning mb-3 " style="width: 18rem;">
+      <img src="{{Auto.logo}}" class="card-img-top" alt="logo marca">
+        <div class="card-body">
+          <h5 class="card-title text-center"> {{ Auto.marca | uppercase}}</h5>
+          <p class="card-text">Fundador: <br>{{ Auto.fundador }}</p>
+          <p class="card-text">Año fundacion: <br> {{ Auto.fundacion }}</p>
+          <p class="card-text">Sede: <br> {{ Auto.sede }}</p>
+          <a href="{{ Auto.url }}" target="_blank" class="btn btn-dark btn btn-outline-warning">Saber mas</a>
+        </div>
+    </div>
+  </ng-container>
 </section>
 
