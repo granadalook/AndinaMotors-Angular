@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AutosService } from '../../../../core/services/autos/autos.service';
+import { Auto } from 'src/app/auto.model';
+
+
 
 
 
@@ -10,11 +13,18 @@ import { AutosService } from '../../../../core/services/autos/autos.service';
 })
 export class NuevosComponent implements OnInit {
 
-  idVehiculo: any;
+  idVehiculo: number=0;
   verAuto: any;
-  constructor(private autosService: AutosService) {}
+  vehiculos: any
+  constructor(private autosService: AutosService) {
+    
+  }
 
   ngOnInit(): void {
+  }
+  verAutos(){
+    this.vehiculos =this.autosService.traerAutos();
+    
   }
   traerAuto() {
     this.verAuto = this.autosService.buscarAuto(this.idVehiculo);

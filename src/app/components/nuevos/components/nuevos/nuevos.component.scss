@@ -1,0 +1,18 @@
+.cardAutos{  
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.card{
+    margin: 5px;
+}
+.botones{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.card-principal{
+    display: flex;
+    justify-content: center;
+}

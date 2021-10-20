@@ -13,7 +13,7 @@ export class AutosService {
       color: 'Negro',
       potencia: 650,
       peso: 1230,
-      logo: '../asset/icons/logo--mclaren.svg',
+      logo: '../../../../../assets/icons/logo--mclaren.svg',
       url: 'https://es.wikipedia.org/wiki/McLaren',
     },
     {
@@ -23,7 +23,7 @@ export class AutosService {
       color: 'Blanco',
       potencia: 420,
       peso: 1200,
-      logo: '../asset/icons/logo--nissan.svg',
+      logo: '../../../../../assets/icons/logo--nissan.svg',
       url: 'https://es.wikipedia.org/wiki/Nissan',
     },
     {
@@ -33,7 +33,7 @@ export class AutosService {
       color: 'Negro',
       potencia: 650,
       peso: 1460,
-      logo: '../asset/icons/logo--chevrolet.svg',
+      logo: '../../../../../assets/icons/logo--chevrolet.svg',
       url: 'https://es.wikipedia.org/wiki/Chevrolet',
     },
     {
@@ -43,7 +43,7 @@ export class AutosService {
       color: 'Gris',
       potencia: 550,
       peso: 1200,
-      logo: '../asset/icons/logo--ford.svg',
+      logo: '../../../../../assets/icons/logo--ford.svg',
       url: 'https://es.wikipedia.org/wiki/Ford_Motor_Company',
     },
     {
@@ -53,7 +53,7 @@ export class AutosService {
       color: 'Rojo',
       potencia: 420,
       peso: 1200,
-      logo: '../asset/icons/logo--lamborghini.svg',
+      logo: '../../../../../assets/icons/logo--lamborghini.svg',
       url: 'https://es.wikipedia.org/wiki/Lamborghini',
     },
     {
@@ -63,7 +63,7 @@ export class AutosService {
       color: 'Verde Militar',
       potencia: 620,
       peso: 1520,
-      logo: '../asset/icons/logo--land-rover.svg',
+      logo: '../../../../../assets/icons/logo--land-rover.svg',
       url: 'https://es.wikipedia.org/wiki/Land_Rover',
     },
     {
@@ -73,7 +73,7 @@ export class AutosService {
       color: 'Plata',
       potencia: 860,
       peso: 1220,
-      logo: '../asset/icons/logo--maserati.svg',
+      logo: '../../../../../assets/icons/logo--maserati.svg',
       url: 'https://es.wikipedia.org/wiki/Maserati',
     },
     {
@@ -83,7 +83,7 @@ export class AutosService {
       color: 'Gris',
       potencia: 320,
       peso: 1620,
-      logo: '../asset/icons/logo--renault.svg',
+      logo: '../../../../../assets/icons/logo--renault.svg',
       url: 'https://es.wikipedia.org/wiki/Renault',
     },
     {
@@ -93,7 +93,7 @@ export class AutosService {
       color: 'Blanco Perla',
       potencia: 420,
       peso: 1560,
-      logo: '../asset/icons/logo--toyota.svg',
+      logo: '../../../../../assets/icons/logo--toyota.svg',
       url: 'https://es.wikipedia.org/wiki/Toyota',
     },
     {
@@ -103,7 +103,7 @@ export class AutosService {
       color: 'Rojo ferrari',
       potencia: 650,
       peso: 1160,
-      logo: '../asset/icons/logo--ferrari.svg',
+      logo: '../../../../../assets/icons/logo--ferrari.svg',
       url: 'https://es.wikipedia.org/wiki/Ferrari',
     },
     {
@@ -113,7 +113,7 @@ export class AutosService {
       color: 'Rojo',
       potencia: 350,
       peso: 1160,
-      logo: '../asset/icons/logo--mazda.svg',
+      logo: '../../../../../assets/icons/logo--mazda.svg',
       url: 'https://es.wikipedia.org/wiki/Mazda',
     },
     {
@@ -123,7 +123,7 @@ export class AutosService {
       color: 'Negro perlado',
       potencia: 550,
       peso: 1460,
-      logo: '../asset/icons/logo--jaguar.svg',
+      logo: '../../../../../assets/icons/logo--jaguar.svg',
       url: 'https://es.wikipedia.org/wiki/Jaguar_Cars',
     },
     {
@@ -133,7 +133,7 @@ export class AutosService {
       color: 'Azul Perlado',
       potencia: 650,
       peso: 1340,
-      logo: '../asset/icons/logo--alfaromeo.svg',
+      logo: '../../../../../assets/icons/logo--alfaromeo.svg',
       url: 'https://es.wikipedia.org/wiki/Alfa_Romeo',
     },
     {
@@ -143,7 +143,7 @@ export class AutosService {
       color: 'Plata',
       potencia: 890,
       peso: 1140,
-      logo: '../asset/icons/logo--astonmartin.svg',
+      logo:'../../../../../assets/icons/logo--astonmartin.svg',
       url: 'https://es.wikipedia.org/wiki/Aston_Martin',
     },
     {
@@ -153,7 +153,7 @@ export class AutosService {
       color: 'Plata',
       potencia: 450,
       peso: 1230,
-      logo: '../asset/icons/logo--mercedesbenz.svg',
+      logo: '../../../../../assets/icons/logo--mercedesbenz.svg',
       url: 'https://es.wikipedia.org/wiki/Mercedes-Benz',
     },
     {
@@ -163,7 +163,7 @@ export class AutosService {
       color: 'Negro',
       potencia: 660,
       peso: 1020,
-      logo: '../asset/icons/logo--audi.svg',
+      logo: '../../../../../assets/icons/logo--audi.svg',
       url: 'https://es.wikipedia.org/wiki/Audi',
     },
     {
@@ -173,7 +173,7 @@ export class AutosService {
       color: 'Negro Perla',
       potencia: 770,
       peso: 1560,
-      logo: '../asset/icons/logo--bmw.svg',
+      logo: '../../../../../assets/icons/logo--bmw.svg',
       url: 'https://es.wikipedia.org/wiki/BMW',
     },
   ];

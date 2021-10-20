@@ -1,4 +1,4 @@
-<p>nuevos works!</p>
+
 <h1 class="title--main">
   Las mejores marcas del mundo solo las encuentras en Andina Motors
 </h1>
@@ -77,7 +77,7 @@
         class="d-block w-100 h-80"
         alt="..."
       />
-      <div class="carousel-caption d-md-block">
+            <div class="carousel-caption d-md-block">
         <h5>Maserati GranTurismo</h5>
         <p>Modelo 2022 Motor V8 460cv Potencia</p>
       </div>
@@ -102,16 +102,59 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-<section id="autosList" class="article--container"></section>
-<div class="boton--nuevos">
-  <input type="number" [(ngModel)]="idVehiculo" />
-  <button (click)="traerAuto()" class="btn btn-primary fs-4" id="botonVerAutos">
-    Autos disponibles
-  </button>
+<hr>
+<section class=" botones">
+  <div class="boton--nuevos">
+  <div class="input-group mb-3 tanio">
+    <input
+      type="number"
+      [(ngModel)]="idVehiculo"
+      class="form-control"
+      placeholder="ID"
+      aria-label="Recipient's username"
+      aria-describedby="button-addon2"
+    />
+    <button
+      class="btn btn-dark fs-3 btn btn-outline-warning"
+      type="button"
+      (click)=" traerAuto()"
+      id="button-addon2"
+    >
+      Buscar Marca
+    </button>
+      
+  </div>
+</div><button (click)="verAutos()" type="button" class="btn btn-dark fs-3 btn btn-outline-warning"> Todas las Marcas</button>
+</section>
+
+<hr>
+<section class="card-principal">
+<ng-container *ngIf="verAuto">
+  <div class="card text-white bg-dark mb-3 border-warning mb-3 " style="width: 18rem;">
+  <img src="{{verAuto.logo}}" class="card-img-top" alt="logo marca">
+  <div class="card-body">
+    <h5 class="card-title text-center"> {{verAuto.marca |uppercase}}</h5>
+    <p class="card-text">{{verAuto.peso }}</p>
+    <p class="card-text">{{ verAuto.potencia }}</p>
+    <a href="{{ verAuto.url }}" target="_blank" class="btn btn-dark btn btn-outline-warning">Saber mas</a>
+  </div>
 </div>
-<div>
-  {{ verAuto.marca }}<br />
-  {{ verAuto.peso }}<br />
-  {{ verAuto.potencia }}<br />
-  {{ verAuto.url }}<br />
-</div>
+  
+  
+</ng-container>
+</section>
+
+<section class="cardAutos">
+<ng-container *ngFor="let Auto of vehiculos">
+  <div class="card text-white bg-dark mb-3 border-warning mb-3 " style="width: 18rem;">
+    <img src="{{Auto.logo}}" class="card-img-top" alt="logo marca">
+    <div class="card-body">
+      <h5 class="card-title text-center"> {{ Auto.marca |uppercase}}</h5>
+      <p class="card-text">{{ Auto.peso }}</p>
+      <p class="card-text">{{ Auto.potencia }}</p>
+      <a href="{{ Auto.url }}" target="_blank" class="btn btn-dark btn btn-outline-warning">Saber mas</a>
+    </div>
+  </div>
+</ng-container>
+</section>
+
