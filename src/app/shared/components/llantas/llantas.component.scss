@@ -1,0 +1,25 @@
+.rueda-container {
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.llanta1 img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.llanta2 img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.rueda-container:hover .llanta1 {
+    transform: translate(250px) rotate(360deg);
+    transition: 2s;
+}
+.rueda-container:hover .llanta2 {
+    transform: translate(-250px) rotate(-360deg);
+    transition: 2s;
+}

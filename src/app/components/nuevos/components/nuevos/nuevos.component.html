@@ -41,7 +41,7 @@
       <img
         src="../../../assets/img/ferrari-3090880_1920.jpg"
         class="d-block w-100"
-        alt="..."
+        alt="Ferrari F12 Berlinetta"
       />
       <div class="carousel-caption d-md-block">
         <h5>Ferrari F12 Berlinetta</h5>
@@ -52,7 +52,7 @@
       <img
         src="../../../assets/img/mercedes-benz-1470152_1920.jpg"
         class="d-block w-100"
-        alt="..."
+        alt="Mercedes Benz AMG-GT"
       />
       <div class="carousel-caption d-md-block">
         <h5>Mercedes Benz AMG-GT</h5>
@@ -63,7 +63,7 @@
       <img
         src="../../../assets/img/automobile-5330343_1920.jpg"
         class="d-block w-100 h-80"
-        alt="..."
+        alt="PORSCHE 718 CAYMAN-GT4"
       />
       <div class="carousel-caption d-md-block">
         <h5>PORSCHE 718 CAYMAN-GT4</h5>
@@ -74,7 +74,7 @@
       <img
         src="../../../assets/img/maserati-granturismo-3085051_1920.jpg"
         class="d-block w-100 h-80"
-        alt="..."
+        alt="Maserati GranTurismo"
       />
             <div class="carousel-caption d-md-block">
         <h5>Maserati GranTurismo</h5>
@@ -128,8 +128,9 @@
 <hr>
 <section class="card-principal">
   <ng-container *ngIf="verAuto">
+    <h2 >Resultado de busqueda</h2> 
     <div class="card text-white bg-dark mb-3 border-warning mb-3 " style="width: 18rem;">
-      <img src="{{verAuto.logo}}" class="card-img-top" alt="logo marca">
+      <img src="{{verAuto.logo}}" class="card-img-top" alt="logo {{verAuto.marca}}">
         <div class="card-body">
           <h5 class="card-title text-center"> {{verAuto.marca |uppercase}}</h5>
           <p class="card-text">Fundador: <br>{{ verAuto.fundador }}</p>
@@ -140,18 +141,20 @@
     </div>
   </ng-container>
 </section>
-<section class="cardAutos">
-  <ng-container *ngFor="let Auto of vehiculos">
-    <div class="card text-white bg-dark mb-3 border-warning mb-3 " style="width: 18rem;">
-      <img src="{{Auto.logo}}" class="card-img-top" alt="logo marca">
-        <div class="card-body">
-          <h5 class="card-title text-center"> {{ Auto.marca | uppercase}}</h5>
-          <p class="card-text">Fundador: <br>{{ Auto.fundador }}</p>
-          <p class="card-text">Año fundacion: <br> {{ Auto.fundacion }}</p>
-          <p class="card-text">Sede: <br> {{ Auto.sede }}</p>
-          <a href="{{ Auto.url }}" target="_blank" class="btn btn-dark btn btn-outline-warning">Saber mas</a>
-        </div>
-    </div>
-  </ng-container>
+<section class="cardAutos">  
+  <ng-container *ngIf="vehiculos">
+    <h2 class="title--cars">Estas son todas las marcas que encontraras en Andina Motors</h2> 
+   <ng-container *ngFor="let Auto of vehiculos">
+      <div class="card text-white bg-dark mb-3 border-warning mb-3 " style="width: 18rem;">
+        <img src="{{Auto.logo}}" class="card-img-top" alt="logo {{Auto.marca}}">
+          <div class="card-body">
+            <h5 class="card-title text-center"> {{ Auto.marca | uppercase}}</h5>
+            <p class="card-text">Fundador: <br>{{ Auto.fundador }}</p>
+            <p class="card-text">Año fundacion: <br> {{ Auto.fundacion }}</p>
+            <p class="card-text">Sede: <br> {{ Auto.sede }}</p>
+            <a href="{{ Auto.url }}" target="_blank" class="btn btn-dark btn btn-outline-warning">Saber mas</a>
+          </div>
+      </div>
+    </ng-container>
+  </ng-container>  
 </section>
-

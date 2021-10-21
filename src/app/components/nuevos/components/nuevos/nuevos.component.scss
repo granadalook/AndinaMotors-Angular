@@ -2,7 +2,10 @@
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-
+    .title--cars{
+        width: 100%;
+        text-align: center;
+    }
 }
 .card{
     margin: 5px;
@@ -14,5 +17,12 @@
 }
 .card-principal{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+.title--main{
+font-weight: bold;
+text-align: center;
+padding: 50px;
 }

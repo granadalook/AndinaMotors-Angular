@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { AutosService } from '../../../../core/services/autos/autos.service';
-import { Auto } from 'src/app/auto.model';
 
 @Component({
   selector: 'app-nuevos',
