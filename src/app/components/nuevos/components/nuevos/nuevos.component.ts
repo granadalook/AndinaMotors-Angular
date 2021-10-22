@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AutosService } from '../../../../core/services/autos/autos.service';
+import { Auto } from 'src/app/auto.model';
 
 @Component({
   selector: 'app-nuevos',
@@ -9,18 +10,18 @@ import { AutosService } from '../../../../core/services/autos/autos.service';
 export class NuevosComponent implements OnInit {
 
   idVehiculo='';
-  verAuto:any;
-  vehiculos: any
+  auto?:Auto;
+  vehiculos?:Array<Auto>
   constructor(private autosService: AutosService) {
   }
 
   ngOnInit(): void {
   }
-  verAutos(){
+  buscarAutos(){
     this.vehiculos =this.autosService.traerAutos();
   }
   traerAuto() {
-    this.verAuto = this.autosService.buscarAuto(this.idVehiculo.toLowerCase());
-      return this.verAuto;
+    this.auto = this.autosService.buscarAuto(this.idVehiculo);
+      return this.auto;
   }
 }

@@ -167,6 +167,6 @@ export class AutosService {
   }
 
   buscarAuto(marca: string) {
-    return this.autos.find((item) => marca === item.marca);
+    return this.autos.find((item) => marca.toUpperCase().trim() === item.marca.toUpperCase().trim());
   }
 }
