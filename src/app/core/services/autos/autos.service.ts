@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Auto } from '../../../auto.model';
 
 @Injectable({
@@ -162,11 +163,11 @@ export class AutosService {
   ];
 
   constructor() {}
-  traerAutos() {
+  traer() {
     return this.autos;
   }
 
-  buscarAuto(marca: string) {
+  Buscar(marca: string) {
     return this.autos.find((item) => marca.toUpperCase().trim() === item.marca.toUpperCase().trim());
   }
 }

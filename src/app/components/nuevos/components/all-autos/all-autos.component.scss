@@ -1,0 +1,12 @@
+.cardAutos{  
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    .title--cars{
+        width: 100%;
+        text-align: center;
+    }
+}
+.card{
+    margin: 5px;
+}

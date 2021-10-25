@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AutosService } from './services/autos/autos.service';
+import { HelperService } from './services/help/helper.service';
 
 
 
@@ -10,7 +11,7 @@ import { AutosService } from './services/autos/autos.service';
     CommonModule
   ],
   providers:[
-    AutosService
+    AutosService,HelperService
   ]
 })
 export class CoreModule { }
