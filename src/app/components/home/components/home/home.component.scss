@@ -1,13 +1,12 @@
-.container{
-    display:flex ;
-    margin: 0px;
-   
-} 
-.container--section{
-    width: 60%;
+
+.principal{
+  width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    
 }
-aside{
-    width: 40%;
-    height: 500px;
-    overflow:   scroll;
+.section{  
+    width: 100%;
+    
 }
