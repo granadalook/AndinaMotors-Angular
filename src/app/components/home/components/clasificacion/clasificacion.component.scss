@@ -1,6 +1,31 @@
-.title--card{
+.container--clas{
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-   
+    flex-wrap: wrap;
+    align-items: center;  
+    .aceites--container{
+        width: 25%;
+    }
 }
+.description{
+    width: 75%;
+        .title--card{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            img{
+                width: 100px;
+            }   
+        }
+            .imagen--container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .imagen--tablas{
+                    width: 60%;
+                }
+            } 
+    }
+.container2{
+    width: 100% !important;
+    }
