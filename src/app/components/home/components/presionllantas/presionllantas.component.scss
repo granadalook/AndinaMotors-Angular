@@ -1,0 +1,12 @@
+.llantas--container{
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-around;
+}
+.item--container{
+    display: flex;
+    img{
+        width: 180px;
+        border-radius: 5px;
+    }
+}
